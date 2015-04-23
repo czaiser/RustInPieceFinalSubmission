@@ -66,7 +66,7 @@ package
 			var physics:Box2D = new Box2D("box2d");
 			//set to true to view boundaries
 			//set to false to hide boundaries
-			physics.visible = true;
+			physics.visible = false;
 			add(physics);
 			
 			ObjectMaker2D.FromMovieClip(level);
