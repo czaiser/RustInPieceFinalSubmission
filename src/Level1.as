@@ -33,7 +33,6 @@ package
 		private var arm:Armature;
 		private var factory:StarlingFactory;
 		private var coin:Coin;
-		
 		private var death:Sensor;
 		
 		//embedding hero dragon bones from Flash
@@ -244,12 +243,14 @@ package
 			trace("hero jumped");
 		}
 		
+		//'kill' enemy sound effect function
 		private function heroAttack():void
 		{
 			_ce.sound.playSound('enemyKill');
 			trace("hero killed enemy");
 		}
 		
+		//hero 'hurt' sound effect function
 		private function heroHurt():void
 		{
 			_ce.sound.playSound('heroHurt');
